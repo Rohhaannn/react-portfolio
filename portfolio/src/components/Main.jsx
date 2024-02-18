@@ -1,6 +1,5 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { Link } from "react-router-dom";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
@@ -13,7 +12,7 @@ const Main = () => {
 
       <div className="w-full h-screen absolute top-0 left-0 bg-white/20">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-center items-center">
-          <h1 className="sm:text-5xl text-4xl font-bold text-gray-200">
+          <h1 className="sm:text-5xl text-4xl font-bold text-white">
             {" "}
             I'm Rohan Shingade
           </h1>
@@ -53,19 +52,6 @@ const Main = () => {
             <a href="https://www.linkedin.com" target="_blank">
               <FaLinkedinIn className="cursor-pointer hover:scale-110" size={30}/>
             </a>
-
-            {/* <Link to="https://twitter.com/i_m_rohaannn">
-              <FaTwitter className="cursor-pointer hover:scale-110" size={30} />
-            </Link>
-
-            <Link to="https://github.com">
-              <FaGithub className="cursor-pointer hover:scale-110" size={30} />
-            </Link>
-
-            <Link to="https://www.linkedin.com">
-              <FaLinkedinIn className="cursor-pointer hover:scale-110" size={30}/>
-            </Link> */}
-
           </div>
         </div>
       </div>
