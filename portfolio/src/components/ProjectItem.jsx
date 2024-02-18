@@ -7,7 +7,7 @@ const ProjectItem = ({img, title}) => {
 
       <img src={img} alt="/" className='rounded-xl group-hover:opacity-10' />
 
-      <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-70%]'>
+      <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
 
         <h3 className='text-xl font-bold text-white tracking-wider text-center '>
           {title}
@@ -15,10 +15,10 @@ const ProjectItem = ({img, title}) => {
 
         <p className='pb-4 pt-2 text-white text-center'>React Js</p>
 
-        {/* <div className='flex justify-center gap-3'>
-          <FaGithub size={50} className='text-center p-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:scale-110'/> 
-          <FaArrowRight size={50} className='text-center p-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:scale-110'/>
-        </div> */}
+        <div className='flex justify-center gap-3'>
+          <FaGithub size={50} className='text-center p-2 mb-1 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:scale-110'/> 
+          <FaArrowRight size={50} className='text-center p-2 mb-1 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:scale-110'/>
+        </div>
 
         <a href="/">
           <p className='text-center px-4 py-2 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:scale-110'>More Info</p>

@@ -42,9 +42,17 @@ const Main = () => {
           </h2>
 
           <div className="flex justify-between pt-6 max-w-[200px] w-full text-gray-200 size-20 ">
-            <FaTwitter className="cursor-pointer hover:scale-110" size={30} />
-            <FaGithub className="cursor-pointer hover:scale-110" size={30} />
-            <FaLinkedinIn className="cursor-pointer hover:scale-110" size={30}/>
+            <a href="https://twitter.com/i_m_rohaannn" target="_blank">
+              <FaTwitter className="cursor-pointer hover:scale-110" size={30} />
+            </a>
+
+            <a href="https://github.com/Rohhaannn" target="_blank">
+              <FaGithub className="cursor-pointer hover:scale-110" size={30} />
+            </a>
+
+            <a href="https://www.linkedin.com" target="_blank">
+              <FaLinkedinIn className="cursor-pointer hover:scale-110" size={30}/>
+            </a>
 
             {/* <Link to="https://twitter.com/i_m_rohaannn">
               <FaTwitter className="cursor-pointer hover:scale-110" size={30} />

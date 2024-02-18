@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import { AiOutlineHome, AiOutlineMail, AiOutlineMenu, AiOutlineProject } from 'react-icons/ai'
+import { AiOutlineHome, AiOutlineMail, AiOutlineMenu, AiOutlineProject, AiOutlineCode } from 'react-icons/ai'
 import { GrProjects } from 'react-icons/gr'
 import { BsPerson } from 'react-icons/bs'
 
@@ -24,22 +24,29 @@ const Sidenav = () => {
               <span className='pl-4'> Home </span>
             </a>
 
+             {/* About */}
+            <a onClick={handleNav} href="#about" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+              <BsPerson size={20} />
+              <span className='pl-4'> About </span>
+            </a>
+
+            {/* Skills */}
+            <a onClick={handleNav} href="#skills" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+              <AiOutlineCode size={20} />
+              <span className='pl-4'> Skills </span>
+            </a>
+
             {/* Work */}
             <a onClick={handleNav} href="#work" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
               <GrProjects size={20} />
               <span className='pl-4'> Work </span>
             </a>
 
+            
             {/* Projects */}
             <a onClick={handleNav} href="#projects" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
               <AiOutlineProject size={20} />
               <span className='pl-4'> Projects </span>
-            </a>
-
-            {/* Resume */}
-            <a onClick={handleNav} href="#main" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-              <BsPerson size={20} />
-              <span className='pl-4'> Resume </span>
             </a>
 
             {/* Contact */}
@@ -63,6 +70,16 @@ const Sidenav = () => {
             <AiOutlineHome size={20}/>
           </a>
 
+          {/* About */}
+          <a href="#about" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 duration-300'>
+            <BsPerson size={20}/>
+          </a>
+
+          {/* skills */}
+          <a href="#skills" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 duration-300'>
+            <AiOutlineCode size={20}/>
+          </a>
+
           {/* work */}
           <a href="#work" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 duration-300'>
             <GrProjects size={20}/>
@@ -73,10 +90,7 @@ const Sidenav = () => {
             <AiOutlineProject size={20}/>
           </a>
 
-          {/* Resume */}
-          <a href="#main" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 duration-300'>
-            <BsPerson size={20}/>
-          </a>
+          
 
           {/* Contact */}
           <a href="#contact" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 duration-300'>
