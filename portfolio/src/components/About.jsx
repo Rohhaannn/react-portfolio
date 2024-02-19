@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="w-screen bg-[#ebeeee]">
       <div className=" text-center md:text-center">
-        <h1 className="text-4xl font-bold text-[#001b5e] p-4 pt-16"> About Me </h1>
+        <h1 className="text-4xl font-bold text-[#001b5e] pt-14"> About Me </h1>
 
         <div id="about" className="max-w-[1040px] mx-auto flex flex-col md:flex-row items-center p-4 py-16">
 
