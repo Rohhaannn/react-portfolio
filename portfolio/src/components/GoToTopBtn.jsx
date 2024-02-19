@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaAngleUp } from 'react-icons/fa'; 
-const GoToTop = () => {
+
+
+const GoToTopBtn = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const GoToTop = () => {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="fixed bottom-4 right-4 bg-blue-800 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
           onClick={scrollToTop}
         >
           <FaAngleUp size={20} className="w-8 h-8" /> {/* ArrowUp icon */}
@@ -41,4 +43,4 @@ const GoToTop = () => {
   )
 }
 
-export default GoToTop
+export default GoToTopBtn

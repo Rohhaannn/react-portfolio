@@ -1,11 +1,13 @@
 import React from 'react';
-import GoToTop from './GoToTop';
+import GoToTopBtn from './GoToTopBtn';
+import ViewResumeBtn from './ViewResumeBtn';
 
 const Layout = ({ children }) => {
   return (
     <div className="relative">
       {children}
-      <GoToTop />
+      <GoToTopBtn/>
+      <ViewResumeBtn/>
     </div>
   );
 };
