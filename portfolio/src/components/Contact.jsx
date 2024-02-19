@@ -19,14 +19,32 @@ const Contact = () => {
     });
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     await axios.post('https://getform.io/f/zbqON2ep', formData);
+  //     setSuccessMessage('Message sent successfully');
+  //     setTimeout(() => {
+  //       setSuccessMessage('');
+  //     }, 2000);
+  //     console.log('Form submitted successfully!');
+  //   } catch (error) {
+  //     console.error('Error submitting form:', error);
+  //   }
+  //   setFormData({
+  //     name: '',
+  //     contact: '',
+  //     email: '',
+  //     subject: '',
+  //     msg: ''
+  //   });
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await axios.post('https://getform.io/f/zbqON2ep', formData);
-      setSuccessMessage('Message sent successfully');
-      setTimeout(() => {
-        setSuccessMessage('');
-      }, 2000);
+      alert('Message sent successfully');
       console.log('Form submitted successfully!');
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -53,7 +71,7 @@ const Contact = () => {
 
           <div className="grid md:grid-cols-2 gap-4 w-full py-2">
             <div className="flex flex-col">
-              <label className="uppercase text-sm py-2"> Name </label>
+              <label className="uppercase text-sm py-2 font-semibold"> Name </label>
               <input
                 className="border-2 rounded-lg p-3 flex border-gray-300"
                 type="text"
@@ -64,7 +82,7 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col">
-              <label className="uppercase text-sm py-2"> Contact Number </label>
+              <label className="uppercase text-sm py-2 font-semibold"> Contact Number </label>
               <input
                 className="border-2 rounded-lg p-3 flex border-gray-300"
                 type="text"
@@ -76,7 +94,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2"> Email </label>
+            <label className="uppercase text-sm py-2 font-semibold"> Email </label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="email"
@@ -87,7 +105,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2"> Subject </label>
+            <label className="uppercase text-sm py-2 font-semibold"> Subject </label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="text"
@@ -98,7 +116,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2"> Meassage </label>
+            <label className="uppercase text-sm py-2 font-semibold"> Meassage </label>
             <textarea
               className="border-2 rounded-lg p-3 flex border-gray-300"
               rows="10"
@@ -108,13 +126,15 @@ const Contact = () => {
             />
           </div>
 
-          <button className="bg-blue-800 text-gray-100 mt-4 w-full p-4 rounded-lg hover:bg-blue-600">
+          <button className="bg-blue-800 text-gray-100 mt-4 mb-4 w-full p-4 rounded-lg hover:bg-blue-600">
             Send Message
           </button>
 
+          {/* <div style={{ height: successMessage ? '3rem' : 0 }} />
+
           {successMessage && (
             <p className="text-green-500 mt-2">{successMessage}</p>
-          )}
+          )} */}
         </form>
       </div>
     </div>
