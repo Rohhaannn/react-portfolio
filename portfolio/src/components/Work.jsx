@@ -31,19 +31,19 @@ const data = [
     
       `
   },
-  {
-    year: 'Feb-2019 to May-2019',
-    role: "Java / IOT Intern",
-    duration: "3 Months",
-    details:
-      `
-      Mainly focused on Understanding IOT programs of Raspberry PI, Arduino and their connections with various modules & sensors and developed a project for handicapped persons.
+  // {
+  //   year: 'Feb-2019 to May-2019',
+  //   role: "Java / IOT Intern",
+  //   duration: "3 Months",
+  //   details:
+  //     `
+  //     Mainly focused on Understanding IOT programs of Raspberry PI, Arduino and their connections with various modules & sensors and developed a project for handicapped persons.
 
-      Finger Controlled Wheel-Chair using Arduino & Flex sensor:
+  //     Finger Controlled Wheel-Chair using Arduino & Flex sensor:
 
-      In order to use or operate this wheelchair user to wear a hand gloves on which flex sensors was attached, as person wearing those gloves bending his finger a signal gets sent to relay motors through Arduino board and wheels used to spin accordingly. An Obstacle sensor also were attached to wheel chair along with power source to charge batteries connected to this mechanism. This project was built to help handicapped persons to move their wheel chair with finger movement without any help of others.
-      `
-  },
+  //     In order to use or operate this wheelchair user to wear a hand gloves on which flex sensors was attached, as person wearing those gloves bending his finger a signal gets sent to relay motors through Arduino board and wheels used to spin accordingly. An Obstacle sensor also were attached to wheel chair along with power source to charge batteries connected to this mechanism. This project was built to help handicapped persons to move their wheel chair with finger movement without any help of others.
+  //     `
+  // },
 ];
 const Work = () => {
   return (

@@ -4,11 +4,11 @@ import mypic from "../../public/mypic.jpg";
 
 const About = () => {
   return (
-    <div className="w-screen bg-[#ebeeee]">
+    <div id="about" className="w-screen bg-[#ebeeee]">
       <div className=" text-center md:text-center">
         <h1 className="text-4xl font-bold text-[#001b5e] pt-14"> About Me </h1>
 
-        <div id="about" className="max-w-[1040px] mx-auto flex flex-col md:flex-row items-center p-4 py-16">
+        <div className="max-w-[1040px] mx-auto flex flex-col md:flex-row items-center p-4 py-16">
 
           <div className="md:w-1/2 pr-8 mb-2">
             <img className="ml-5 w-59 h-56" src={mypic} alt="Rohan" />
