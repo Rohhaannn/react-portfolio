@@ -7,10 +7,11 @@ const Main = () => {
     <div id="main">
       <img
         className="w-full h-screen object-cover"
-        src="https://www.codingdojo.com/blog/wp-content/uploads/javascript-1.jpg"
+        // src="https://www.codingdojo.com/blog/wp-content/uploads/javascript-1.jpg"
+        src="https://en.idei.club/uploads/posts/2023-03/1679177891_en-idei-club-p-laptop-room-dizain-krasivo-5.jpg"
       />
 
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/20">
+      <div className="w-full h-screen absolute top-0 left-0 bg-white/10">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-center items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-white">
             {" "}
@@ -42,15 +43,15 @@ const Main = () => {
 
           <div className="flex justify-between pt-6 max-w-[200px] w-full text-gray-200 size-20 ">
             <a href="https://twitter.com" target="_blank">
-              <FaTwitter className="cursor-pointer hover:scale-110" size={30} />
+              <FaTwitter className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30} />
             </a>
 
             <a href="https://github.com" target="_blank">
-              <FaGithub className="cursor-pointer hover:scale-110" size={30} />
+              <FaGithub className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30} />
             </a>
 
             <a href="https://www.linkedin.com" target="_blank">
-              <FaLinkedinIn className="cursor-pointer hover:scale-110" size={30}/>
+              <FaLinkedinIn className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30}/>
             </a>
           </div>
         </div>
