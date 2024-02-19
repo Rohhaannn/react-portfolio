@@ -41,11 +41,11 @@ const Main = () => {
           </h2>
 
           <div className="flex justify-between pt-6 max-w-[200px] w-full text-gray-200 size-20 ">
-            <a href="https://twitter.com" target="_blank">
+            <a href="https://twitter.com/i_m_rohaannn" target="_blank">
               <FaTwitter className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30} />
             </a>
 
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com/Rohhaannn" target="_blank">
               <FaGithub className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30} />
             </a>
 

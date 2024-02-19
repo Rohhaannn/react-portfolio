@@ -9,10 +9,10 @@ const Footer = () => {
         {/* <h1 className='text-4xl mb-10 font-bold text-center text-[#80efca]'> Footer </h1> */}
 
           <div className='flex text-center justify-center mb-6 gap-8 text-white '>
-            <a href="https://twitter.com" target="_blank"  className='hover:text-[#80efca]'>
+            <a href="https://twitter.com/i_m_rohaannn" target="_blank"  className='hover:text-[#80efca]'>
               <FaTwitter className="cursor-pointer hover:scale-110"  size={30}/>
             </a>
-            <a href="https://github.com" target="_blank" className='hover:text-[#80efca]'>
+            <a href="https://github.com/Rohhaannn" target="_blank" className='hover:text-[#80efca]'>
               <FaGithub className="cursor-pointer hover:scale-110" size={30}/>
             </a>
             <a href="https://www.linkedin.com" target="_blank" className='hover:text-[#80efca]'>
