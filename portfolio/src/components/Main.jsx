@@ -7,7 +7,6 @@ const Main = () => {
     <div id="main">
       <img
         className="w-full h-screen object-cover"
-        // src="https://www.codingdojo.com/blog/wp-content/uploads/javascript-1.jpg"
         src="https://en.idei.club/uploads/posts/2023-03/1679177891_en-idei-club-p-laptop-room-dizain-krasivo-5.jpg"
       />
 
