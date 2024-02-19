@@ -19,32 +19,14 @@ const Contact = () => {
     });
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     await axios.post('https://getform.io/f/zbqON2ep', formData);
-  //     setSuccessMessage('Message sent successfully');
-  //     setTimeout(() => {
-  //       setSuccessMessage('');
-  //     }, 2000);
-  //     console.log('Form submitted successfully!');
-  //   } catch (error) {
-  //     console.error('Error submitting form:', error);
-  //   }
-  //   setFormData({
-  //     name: '',
-  //     contact: '',
-  //     email: '',
-  //     subject: '',
-  //     msg: ''
-  //   });
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await axios.post('https://getform.io/f/zbqON2ep', formData);
-      alert('Message sent successfully');
+      setSuccessMessage('Message sent successfully');
+      setTimeout(() => {
+        setSuccessMessage('');
+      }, 2000);
       console.log('Form submitted successfully!');
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -57,7 +39,6 @@ const Contact = () => {
       msg: ''
     });
   };
-
 
 
   return (
@@ -130,11 +111,10 @@ const Contact = () => {
             Send Message
           </button>
 
-          {/* <div style={{ height: successMessage ? '3rem' : 0 }} />
 
           {successMessage && (
-            <p className="text-green-500 mt-2">{successMessage}</p>
-          )} */}
+            <p className="text-green-500 mt-3">{successMessage}</p>
+          )}
         </form>
       </div>
     </div>
