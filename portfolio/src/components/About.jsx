@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import mypic from "../../public/mypic.jpg";
+import mypic from '../../public/mypic.jpg'
 
 const About = () => {
   return (
@@ -11,7 +11,8 @@ const About = () => {
         <div className="max-w-[1040px] mx-auto flex flex-col md:flex-row items-center p-4 py-16">
 
           <div className="md:w-1/2 pr-8 mb-2">
-            <img className="ml-5 w-59 h-56" src={mypic} alt="Rohan" />
+            {/* Replace mypic with the Google Drive link */}
+            <img className="ml-5 w-56 h-59  " src={mypic} alt="Rohan" />
           </div>
 
           <div className="md:w-1/2 text-center ">
