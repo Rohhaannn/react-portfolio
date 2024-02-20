@@ -10,6 +10,7 @@ const Contact = () => {
     msg: ''
   });
   const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +22,16 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Check if any field is empty
+    if (!formData.name || !formData.contact || !formData.email || !formData.subject || !formData.msg) {
+      setErrorMessage('Please fill all the fields.');
+      setTimeout(() => {
+        setErrorMessage('');
+      }, 2000);
+      return;
+    }
+
     try {
       await axios.post('https://getform.io/f/zbqON2ep', formData);
       setSuccessMessage('Message sent successfully');
@@ -40,80 +51,82 @@ const Contact = () => {
     });
   };
 
-
   return (
-    <div id="contact" className="w-screen bg-[#ebeeee]">
-      <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-        <h1 className="py-4 mb-10 text-4xl font-bold text-center text-[#001b5e]">
-          Contact
-        </h1>
+    <div className="w-screen bg-[#ebeeee]">
+      <div id='contact' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+        <h1 className='py-4 mb-10 text-4xl font-bold text-center text-[#001b5e]'>Contact</h1>
 
-        <form onSubmit={handleSubmit} action="https://getform.io/f/zbqON2ep" method="POST" encType="multipart/form-data">
+        <form onSubmit={handleSubmit} encType='multipart/form-data'>
+          <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
 
-          <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-            <div className="flex flex-col">
-              <label className="uppercase text-sm py-2 font-semibold"> Name </label>
+            <div className='flex flex-col'>
+              <label className='uppercase text-sm py-2'> Name </label>
               <input
-                className="border-2 rounded-lg p-3 flex border-gray-300"
-                type="text"
+                className='border-2 rounded-lg p-3 flex border-gray-300'
+                type='text'
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
               />
             </div>
 
-            <div className="flex flex-col">
-              <label className="uppercase text-sm py-2 font-semibold"> Contact Number </label>
+            <div className='flex flex-col'>
+              <label className='uppercase text-sm py-2'> Contact Number </label>
               <input
-                className="border-2 rounded-lg p-3 flex border-gray-300"
-                type="text"
+                className='border-2 rounded-lg p-3 flex border-gray-300'
+                type='text'
                 name="contact"
+                maxLength={10}
                 value={formData.contact}
                 onChange={handleChange}
               />
             </div>
+
           </div>
 
-          <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2 font-semibold"> Email </label>
+          <div className='flex flex-col py-2'>
+            <label className='uppercase text-sm py-2'> Email </label>
             <input
-              className="border-2 rounded-lg p-3 flex border-gray-300"
-              type="email"
+              className='border-2 rounded-lg p-3 flex border-gray-300'
+              type='email'
               name="email"
               value={formData.email}
               onChange={handleChange}
             />
           </div>
 
-          <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2 font-semibold"> Subject </label>
+          <div className='flex flex-col py-2'>
+            <label className='uppercase text-sm py-2'> Subject </label>
             <input
-              className="border-2 rounded-lg p-3 flex border-gray-300"
-              type="text"
+              className='border-2 rounded-lg p-3 flex border-gray-300'
+              type='text'
               name="subject"
               value={formData.subject}
               onChange={handleChange}
             />
           </div>
 
-          <div className="flex flex-col py-2">
-            <label className="uppercase text-sm py-2 font-semibold"> Meassage </label>
+          <div className='flex flex-col py-2'>
+            <label className='uppercase text-sm py-2'> Message </label>
             <textarea
-              className="border-2 rounded-lg p-3 flex border-gray-300"
-              rows="10"
+              className='border-2 rounded-lg p-3 flex border-gray-300'
+              rows='10'
               name="msg"
               value={formData.msg}
               onChange={handleChange}
             />
           </div>
 
-          <button className="bg-blue-800 text-gray-100 mt-4 mb-4 w-full p-4 rounded-lg hover:bg-blue-600">
+          <button className='bg-blue-800 text-gray-100 mt-4 w-full p-4 rounded-lg hover:bg-blue-600'>
             Send Message
           </button>
 
+          {errorMessage && (
+            <p className="text-red-500 mt-2">{errorMessage}</p>
+          )}
 
           {successMessage && (
-            <p className="text-green-500 mt-3">{successMessage}</p>
+            <p className="text-green-500 mt-2">{successMessage}</p>
           )}
         </form>
       </div>
