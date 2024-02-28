@@ -40,12 +40,7 @@ const About = () => {
             </h6>
 
             <p className="text-lg text-justify mb-8">
-              I am a post-graduate, holding a Masters of Computer Applications
-              (MCA) degree from Pune University. I also completed my Bachelor's
-              degree in Computer Applications from Shivaji University, Kolhapur.
-              With a strong academic foundation and expertise in computer
-              science, I am dedicated to leveraging my knowledge to deliver
-              exceptional results.
+            I hold a Master of Computer Applications (MCA) degree from Pune University, complemented by a Bachelor's degree in Computer Applications from Shivaji University, Kolhapur. With a robust academic background and specialized expertise in computer science, along with proficiency in Web development and the MERN (MongoDB, Express.js, React.js, Node.js) stack, I am committed to utilizing my skills to achieve outstanding outcomes
             </p>
           </div>
         </div>
