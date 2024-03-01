@@ -9,7 +9,8 @@ const Projects2 = () => {
     <div className='w-screen'>
       <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
         <h1 className='text-4xl mb-10 font-bold text-center text-[#001b5e]'> Projects </h1>
-          <div className='flex flex-row gap-10'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 justify-center items-center'>
+
             <ProjectItem 
               img={Todo}
               title="Todo with Context & local" 

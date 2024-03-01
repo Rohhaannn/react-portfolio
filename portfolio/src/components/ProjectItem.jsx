@@ -5,7 +5,7 @@ import { ArrowUpRight } from 'lucide-react'
 const ProjectItem2 = ({img, title, desc, githubLink, liveLink}) => {
   return (
     <div >
-      <div >
+      <div className='items-center justify-center '>
         
         <div className="w-[300px] rounded-md border">
         <img
