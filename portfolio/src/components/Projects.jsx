@@ -18,8 +18,8 @@ const Projects2 = () => {
               img={portfolio}
               title="Portfolio in React" 
               desc="A polished React portfolio showcasing my skills and projects, crafted with Vite for optimal performance and styled elegantly with Tailwind CSS."
-              githubLink="https://github.com/Rohhaannn/react-deployed-projects/tree/main/10todoContextLocal"
-              liveLink="https://todo-contextlocal.vercel.app/"
+              githubLink="https://github.com/Rohhaannn/react-portfolio/tree/main/portfolioc"
+              liveLink="https://react-portfolio-black-chi.vercel.app/"
             />
 
             <ProjectItem 
