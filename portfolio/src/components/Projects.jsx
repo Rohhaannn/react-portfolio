@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
+import portfolio from '../../public/projectImages/portfolio.png'
 import Todo from '../../public/projectImages/Todo.png'
 import pswrdGen from '../../public/projectImages/pswrdGen.png'
 import currency from '../../public/projectImages/currency.png'
@@ -8,8 +9,18 @@ const Projects2 = () => {
   return (
     <div className='w-screen'>
       <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+
         <h1 className='text-4xl mb-10 font-bold text-center text-[#001b5e]'> Projects </h1>
+
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 justify-center items-center'>
+
+            <ProjectItem 
+              img={portfolio}
+              title="Portfolio in React" 
+              desc="A polished React portfolio showcasing my skills and projects, crafted with Vite for optimal performance and styled elegantly with Tailwind CSS."
+              githubLink="https://github.com/Rohhaannn/react-deployed-projects/tree/main/10todoContextLocal"
+              liveLink="https://todo-contextlocal.vercel.app/"
+            />
 
             <ProjectItem 
               img={Todo}
@@ -30,7 +41,7 @@ const Projects2 = () => {
             <ProjectItem
               img={currency}
               title="Currency Convertor" 
-              desc="A dynamic currency converter React application powered by Vite, enhanced with Tailwind CSS for modern styling, facilitating seamless exchange rate conversions." 
+              desc="A currency converter React app powered by Vite, styled with Tailwind CSS for modern design, facilitating seamless exchange rate conversions." 
               githubLink="https://github.com/Rohhaannn/react-deployed-projects/tree/main/06currencyConvertor"
               liveLink="https://currency-converter-inky-iota.vercel.app/"
             />
