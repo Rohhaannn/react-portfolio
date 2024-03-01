@@ -1,14 +1,15 @@
 import React from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
-const ProjectItem2 = ({title, desc, githubLink, liveLink}) => {
+
+const ProjectItem2 = ({img, title, desc, githubLink, liveLink}) => {
   return (
     <div >
       <div >
         
         <div className="w-[300px] rounded-md border">
         <img
-          src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+          src={img}
           alt="Laptop"
           className="h-[200px] w-full rounded-t-md object-cover"
         />
