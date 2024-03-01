@@ -3,10 +3,11 @@ import Main from './components/Main'
 import About from './components/About'
 import Skills from './components/Skills'
 import Work from './components/Work'
-import Projects from './components/Projects'
+// import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Layout from './components/Layout'
+import Projects2 from './components/Projects'
 
 function App() {
   
@@ -22,7 +23,7 @@ function App() {
       <hr/>
       <Work/>
       <hr/>
-      <Projects/>
+      <Projects2/>
       <hr/>
       <Contact/>
       <hr/>

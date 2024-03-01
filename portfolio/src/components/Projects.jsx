@@ -1,29 +1,37 @@
 import React from 'react'
+
 import ProjectItem from './ProjectItem'
-import img1 from '../assets/img1.avif'
-import img2 from '../assets/img2.avif'
-import img3 from '../assets/img3.avif'
-import img4 from '../assets/img4.avif'
 
-
-const Projects = () => {
+const Projects2 = () => {
   return (
-    <div className="w-screen bg-[#d3d3d3]">
+    <div className='w-screen'>
       <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
-        <h1 className='text-4xl font-bold text-center text=[#001b5e]'> Projects </h1>
-        <p className='text-center py-8'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis recusandae explicabo earum molestiae, neque nisi id sapiente dolorem consectetur? Nihil provident voluptatum laboriosam, eligendi facilis exercitationem corporis dolorem! Amet, veniam.
-        </p>
+        <h1 className='text-4xl mb-10 font-bold text-center text-[#001b5e]'> Projects </h1>
+          <div className='flex flex-row gap-10'>
+            <ProjectItem 
+              title="Todo with Context & local" 
+              desc="A minimalist Todo list application leveraging React's Context API and local storage for state management, styled elegantly with Tailwind CSS."
+              githubLink="https://github.com/Rohhaannn/react-deployed-projects/tree/main/10todoContextLocal"
+              liveLink="https://todo-contextlocal.vercel.app/"
+            />
 
-        <div className='grid sm:grid-cols-2 gap-12'>
-          <ProjectItem img={img1} title='img1' />
-          <ProjectItem img={img2} title='img2' />
-          <ProjectItem img={img3} title='img3' />
-          <ProjectItem img={img4} title='img4' />
-        </div>
+            <ProjectItem 
+              title="Password Generator" 
+              desc="An intuitive password generator React app built with Vite, featuring Tailwind CSS for sleek styling, providing secure and customizable password generation."
+              githubLink="https://github.com/Rohhaannn/react-deployed-projects/tree/main/05passwordGenerator"
+              liveLink="https://password-generator-azure-xi.vercel.app/"
+            />
+
+            <ProjectItem 
+              title="Currency Convertor" 
+              desc="A dynamic currency converter React application powered by Vite, enhanced with Tailwind CSS for modern styling, facilitating seamless exchange rate conversions." 
+              githubLink="https://github.com/Rohhaannn/react-deployed-projects/tree/main/06currencyConvertor"
+              liveLink="https://currency-converter-inky-iota.vercel.app/"
+            />
+          </div>
       </div>
-    </div>
+    </div>    
   )
 }
 
-export default Projects
+export default Projects2
