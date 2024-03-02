@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
 import portfolio from '../../public/projectImages/portfolio.png'
+import todoRedux from '../../public/projectImages/todoRedux.png'
 import allposts from '../../public/projectImages/allposts.png'
 import Todo from '../../public/projectImages/Todo.png'
 import pswrdGen from '../../public/projectImages/pswrdGen.png'
@@ -21,6 +22,14 @@ const Projects2 = () => {
               desc="A polished React portfolio showcasing my skills and projects, crafted with Vite for optimal performance and styled elegantly with Tailwind CSS."
               githubLink="https://github.com/Rohhaannn/react-portfolio/tree/main/portfolioc"
               liveLink="https://react-portfolio-black-chi.vercel.app/"
+            />
+
+            <ProjectItem
+              img={todoRedux}
+              title="Todo With Redux-Toolkit"
+              desc="An efficient Todo application built with React and Redux Toolkit, streamlining state management for seamless task tracking and organization."
+              githubLink="https://github.com/Rohhaannn/Todo--redux-toolkit"
+              liveLink="https://todo-redux-toolkit-chi.vercel.app/"
             />
 
             <ProjectItem 
