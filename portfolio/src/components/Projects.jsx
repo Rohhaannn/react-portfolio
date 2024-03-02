@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
 import portfolio from '../../public/projectImages/portfolio.png'
+import allposts from '../../public/projectImages/allposts.png'
 import Todo from '../../public/projectImages/Todo.png'
 import pswrdGen from '../../public/projectImages/pswrdGen.png'
 import currency from '../../public/projectImages/currency.png'
@@ -20,6 +21,14 @@ const Projects2 = () => {
               desc="A polished React portfolio showcasing my skills and projects, crafted with Vite for optimal performance and styled elegantly with Tailwind CSS."
               githubLink="https://github.com/Rohhaannn/react-portfolio/tree/main/portfolioc"
               liveLink="https://react-portfolio-black-chi.vercel.app/"
+            />
+
+            <ProjectItem 
+              img={allposts}
+              title="Blog App"
+              desc="A dynamic React app powered by Vite and Tailwind CSS, integrated with Appwrite backend, enabling users to seamlessly sign up, sign in, and post content."
+              githubLink="https://github.com/Rohhaannn/React-Blog-App/tree/main/12MegaBlog"
+              liveLink="https://react-blog-app-iota.vercel.app/"
             />
 
             <ProjectItem 
