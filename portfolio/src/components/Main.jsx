@@ -49,7 +49,7 @@ const Main = () => {
               <FaGithub className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30} />
             </a>
 
-            <a href="https://www.linkedin.com" target="_blank">
+            <a href="https://www.linkedin.com/in/rohan-s-a56210165/" target="_blank">
               <FaLinkedinIn className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30}/>
             </a>
           </div>
