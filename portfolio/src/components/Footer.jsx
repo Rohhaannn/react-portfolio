@@ -15,7 +15,7 @@ const Footer = () => {
             <a href="https://github.com/Rohhaannn" target="_blank" className='hover:text-[#80efca]'>
               <FaGithub className="cursor-pointer hover:scale-110" size={30}/>
             </a>
-            <a href="https://www.linkedin.com" target="_blank" className='hover:text-[#80efca]'>
+            <a href="https://www.linkedin.com/in/rohan-s-a56210165/" target="_blank" className='hover:text-[#80efca]'>
               <FaLinkedinIn className="cursor-pointer hover:scale-110" size={30}/>
             </a>
 
