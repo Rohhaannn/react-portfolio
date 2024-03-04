@@ -4,7 +4,7 @@ import { FaFilePdf } from 'react-icons/fa';
 const ViewResumeBtn = () => {
   const openResume = () => {
 
-    const resumeLink = 'https://drive.google.com/file/d/1MPJxq2SX7x5_6I10mt0U650vqarRAKi2/view?usp=sharing';
+    const resumeLink = 'https://drive.google.com/file/d/1xv0UVme9uCfGtsfcmLi1XWazqTD0NvN8/view?usp=sharing';
 
     // Open the resume link in a new tab/window
     window.open(resumeLink, '_blank');
