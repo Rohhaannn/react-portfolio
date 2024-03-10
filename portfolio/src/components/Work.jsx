@@ -3,10 +3,19 @@ import WorkItem from './WorkItem';
 
 const data = [
   {
+    year: "Spet-2023 to Feb-2024",
+    company: "SSquareIT Solutions",
+    role: "ReactJs Developer Intern",
+    location: "Remote",
+    duration: "6 Months",
+    details:
+      "During a 6-month internship, I had the opportunity to immerse myself in the world of front-end development, particularly focusing on React.js. Working closely with seasoned developers, I actively contributed to various projects, including the creation of a Blog App, Portfolio Project, and To-Do App, all implemented using the Redux Toolkit methodology.",
+  },
+  {
     year: "Apr-2023 to June-2023",
     company: "Solar Secure Solutions",
     role: "FullStack Web Developer Intern",
-    location: "online",
+    location: "Remote",
     duration: "2 Months",
     details:
       "My primary focus lies in developing basic projects using HTML, CSS, JavaScript, JQuery, Vanilla JS, and Bootstrap, integrating various animations to create interactive web pages and applications. Additionally, I have undertaken a significant project centered around the concept of 'Food Ordering,' employing technologies such as Node.js, MySQL, HTML, CSS, and JavaScript to deliver a comprehensive solution.",
