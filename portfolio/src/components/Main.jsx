@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -41,6 +41,7 @@ const Main = () => {
           </h2>
 
           <div className="flex justify-between pt-6 max-w-[200px] w-full text-gray-200 size-20 ">
+
             <a href="https://twitter.com/i_m_rohaannn" target="_blank">
               <FaTwitter className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30} />
             </a>
@@ -52,6 +53,11 @@ const Main = () => {
             <a href="https://www.linkedin.com/in/rohan-s-a56210165/" target="_blank">
               <FaLinkedinIn className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30}/>
             </a>
+
+            <a href="https://discord.gg/K2eE44WzUX" target="_blank">
+              <FaDiscord className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30}/>
+            </a>
+
           </div>
         </div>
       </div>
