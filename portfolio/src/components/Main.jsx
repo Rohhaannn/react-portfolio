@@ -43,19 +43,19 @@ const Main = () => {
           <div className="flex justify-between pt-6 max-w-[200px] w-full text-gray-200 size-20 ">
 
             <a href="https://twitter.com/i_m_rohaannn" target="_blank">
-              <FaTwitter className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30} />
+              <FaTwitter className="cursor-pointer hover:scale-110 hover:text-[#01D293]" size={30} />
             </a>
 
             <a href="https://github.com/Rohhaannn" target="_blank">
-              <FaGithub className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30} />
+              <FaGithub className="cursor-pointer hover:scale-110 hover:text-[#01D293]" size={30} />
             </a>
 
             <a href="https://www.linkedin.com/in/rohan-s-a56210165/" target="_blank">
-              <FaLinkedinIn className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30}/>
+              <FaLinkedinIn className="cursor-pointer hover:scale-110 hover:text-[#01D293]" size={30}/>
             </a>
 
             <a href="https://discord.gg/K2eE44WzUX" target="_blank">
-              <FaDiscord className="cursor-pointer hover:scale-110 hover:text-[#80efca]" size={30}/>
+              <FaDiscord className="cursor-pointer hover:scale-110 hover:text-[#01D293]" size={30}/>
             </a>
 
           </div>
