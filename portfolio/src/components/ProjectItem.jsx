@@ -2,15 +2,15 @@ import React from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
 
-const ProjectItem2 = ({img, title, desc, githubLink, liveLink}) => {
+const ProjectItem = ({img, title, desc, githubLink, liveLink}) => {
   return (
-    <div >
+    <div>
       <div className='items-center justify-center '>
         
-        <div className="w-[300px] rounded-md border">
+        <div className="w-[300px] rounded-md border hover:scale-105 transition-transform">
         <img
           src={img}
-          alt="Laptop"
+          alt={title}
           className="h-[200px] w-full rounded-t-md object-cover"
         />
         <div className="p-4">
@@ -26,7 +26,7 @@ const ProjectItem2 = ({img, title, desc, githubLink, liveLink}) => {
               href={githubLink}
               target="_blank"
               type="button"
-              className="mt-4 w-full text-center rounded-lg bg-black px-2 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="mt-4 w-full text-center rounded-lg bg-black px-2 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-600  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               Github
             </a>
@@ -35,7 +35,7 @@ const ProjectItem2 = ({img, title, desc, githubLink, liveLink}) => {
               href={liveLink}
               target="_blank"
               type="button"
-              className="mt-4 w-full text-center rounded-lg bg-black px-2 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="mt-4 w-full text-center rounded-lg bg-black px-2 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               Live
             </a>
@@ -48,4 +48,4 @@ const ProjectItem2 = ({img, title, desc, githubLink, liveLink}) => {
   )
 }
 
-export default ProjectItem2
+export default ProjectItem
