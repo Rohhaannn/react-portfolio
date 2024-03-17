@@ -28,7 +28,7 @@ const Footer = () => {
 
           </div>
 
-        <h5 className=' text-lg text-center text-white'> Created by <span className='font-bold text-[#01D293]'>Rohan</span> | &copy; 2024 All rights reserved </h5>
+        <h5 className=' text-lg text-center text-white'> &copy; Copyright 2024 - Developed by <span className='font-bold text-[#01D293]'>Rohan</span> | All rights reserved. </h5>
       </div>
     </div>
   )
