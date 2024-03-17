@@ -7,7 +7,7 @@ import Todo from '../../public/projectImages/Todo.png'
 import pswrdGen from '../../public/projectImages/pswrdGen.png'
 import currency from '../../public/projectImages/currency.png'
 
-const Projects2 = () => {
+const Projects = () => {
   return (
     <div className='w-screen'>
       <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
@@ -69,4 +69,4 @@ const Projects2 = () => {
   )
 }
 
-export default Projects2
+export default Projects

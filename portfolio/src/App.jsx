@@ -7,7 +7,7 @@ import Work from './components/Work'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Layout from './components/Layout'
-import Projects2 from './components/Projects'
+import Projects from './components/Projects'
 
 function App() {
   
@@ -23,7 +23,7 @@ function App() {
       <hr/>
       <Work/>
       <hr/>
-      <Projects2/>
+      <Projects/>
       <hr/>
       <Contact/>
       <hr/>
