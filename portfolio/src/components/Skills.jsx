@@ -27,6 +27,12 @@ const Skills = () => {
             <h3 className='font-bold'>Tools : </h3>
             <p>Git, GithHub, Postman, VS Code</p>
           </div>
+
+          <div className='flex flex-wrap gap-4 mb-2'>
+            <h3 className='font-bold'>Deployment Platforms : </h3>
+            <p>Vercel, Netlify</p>
+          </div>
+          
         </div> 
 
       </div>
