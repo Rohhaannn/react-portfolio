@@ -15,7 +15,7 @@ const ViewResumeBtn = () => {
       className="fixed bottom-4 left-4 bg-blue-800 text-white px-4 py-4 rounded-full shadow-md flex items-center space-x-4 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
       onClick={openResume}
     >
-      <FaFilePdf className="w-6 h-6 mr-1" /> {/* PDF icon */}
+      <FaFilePdf className="w-6 h-6 mr-1" />
       View Resume
     </button>
   );
